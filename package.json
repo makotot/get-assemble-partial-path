@@ -1,0 +1,31 @@
+{
+  "name": "get-assemble-partial-path",
+  "version": "0.0.1",
+  "description": "Get the assemble partial path",
+  "main": "index.js",
+  "dependencies": {
+    "get-assemble-partial-dirs": "0.0.2",
+    "promise": "^7.0.4"
+  },
+  "devDependencies": {
+    "eslint-config-makotot": "0.0.1",
+    "grunt": "^0.4.5",
+    "grunt-assemble": "^0.4.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-eslint": "^17.1.0",
+    "jit-grunt": "^0.9.1",
+    "time-grunt": "^1.2.1"
+  },
+  "scripts": {
+    "test": "grunt && grunt test"
+  },
+  "author": "makotot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makotot/get-assemble-partial-path.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "assemble"
+  ]
+}
