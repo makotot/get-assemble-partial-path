@@ -16,7 +16,11 @@ module.exports = function (params, partial, cb) {
       return new Promise(function (resolve, reject) {
         fs.stat(path.resolve(dir, partial + '.hbs'), function (error, stats) {
           if (error) {
-            if (error.errno === -2) {
+
+            // if the partial file does not found:
+            // - node 0.10 : errno => 34
+            // - node 0.12 : errno => -2
+            if (error.errno === -2 || error.errno === 34) {
               resolve(null);
             } else {
               reject(error);
